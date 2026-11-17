@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animalec Back-Office — Prova de Conceito (v1)</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 20px; background: #f8fafc; color: #1e293b; }
+    header { background: #2d6a4f; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+    header h1 { font-size: 1.5rem; margin-bottom: 10px; }
+    nav ul { list-style: none; display: flex; gap: 15px; flex-wrap: wrap; }
+    nav a { color: #d8f3dc; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+    nav a:hover, nav a.active { color: #ffffff; text-decoration: underline; }
+    .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 20px; }
+    .card h2 { color: #2d6a4f; margin-bottom: 10px; font-size: 1.25rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { border: 1px solid #cbd5e1; padding: 10px; text-align: left; font-size: 0.9rem; }
+    th { background: #f1f5f9; color: #334155; }
+    footer { text-align: center; margin-top: 30px; color: #64748b; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Animalec — Painel de Administração</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Utilizadores</a></li>
+        <li><a href="#">Animais</a></li>
+        <li><a href="#">Quizzes</a></li>
+        <li><a href="#">Questões</a></li>
+        <li><a href="#" class="active">Patrocinadores</a></li>
+        <li><a href="#" class="active">Especialistas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Gestão de Patrocinadores (Sponsors)</h2>
+      <p>Estrutura base da listagem de patrocinadores associados às espécies de animais.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Animal Patrocinado</th>
+            <th>Escalão</th>
+            <th>Contacto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Oceanário de Lisboa</td>
+            <td>Lontra-marinha</td>
+            <td>Ouro</td>
+            <td>parcerias@oceanario.pt</td>
+          </tr>
+          <tr>
+            <td>WWF Portugal</td>
+            <td>Lince-ibérico</td>
+            <td>Ouro</td>
+            <td>geral@wwf.pt</td>
+          </tr>
+          <tr>
+            <td>BPI Fundação</td>
+            <td>Lobo-ibérico</td>
+            <td>Prata</td>
+            <td>apoios@fundacaobpi.pt</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Gestão de Especialistas Científicos (Experts)</h2>
+      <p>Estrutura base dos curadores e biólogos responsáveis pela validação científica dos conteúdos.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Instituição</th>
+            <th>Especialidade</th>
+            <th>Contacto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dra. Ana Silveira</td>
+            <td>CIIMAR / Univ. Porto</td>
+            <td>Mamíferos Marinhos</td>
+            <td>asilveira@ciimar.up.pt</td>
+          </tr>
+          <tr>
+            <td>Dr. Gonçalo Mendes</td>
+            <td>Faculdade de Ciências UL</td>
+            <td>Carnívoros e Aves</td>
+            <td>gmendes@ciencias.ulisboa.pt</td>
+          </tr>
+          <tr>
+            <td>Dra. Beatriz Cunha</td>
+            <td>CESAM / Univ. Aveiro</td>
+            <td>Anfíbios e Répteis</td>
+            <td>bcunha@ua.pt</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Animalec Admin — Miguel Correia (1103691)</p>
+  </footer>
+</body>
+</html>
